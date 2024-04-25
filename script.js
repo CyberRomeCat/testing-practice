@@ -1,4 +1,6 @@
-function sum(a, b) {
-  return a + b;
+function capitalize(word) {
+  let capitalize = word[0].toUpperCase() + word.slice(1);
+  return capitalize;
 }
-module.exports = sum;
+
+module.exports = capitalize;
