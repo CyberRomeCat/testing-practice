@@ -1,4 +1,4 @@
-import { capitalize, reverseStr, cal, analyzeArr } from "./script";
+import { capitalize, reverseStr, cal, caesarCi, analyzeArr } from "./script";
 
 test("Capitalize first letter", () => {
   expect(capitalize("love")).toBe("Love");
@@ -27,6 +27,10 @@ test("calculator", () => {
   expect(cal(calc.subtract())).toBe(4);
   expect(cal(calc.multiply())).toBe(6);
   expect(cal(calc.divide())).toBe(1);
+});
+
+test("caesarCipher", () => {
+  expect(caesarCi("julius")).toBe("kvmjvt");
 });
 
 test("analyzeArray", () => {
