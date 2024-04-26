@@ -15,7 +15,14 @@ function cal(para) {
 }
 
 function caesarCi(test) {
-  return "kvmjvt";
+  let name = test.split("");
+  let charCodeName = [];
+  let newCharCode = [];
+  let cipher = [];
+  name.forEach((l) => charCodeName.push(l.charCodeAt(0)));
+  newCharCode = charCodeName.map((c) => c + 3);
+  newCharCode.forEach((l) => cipher.push(String.fromCharCode(l)));
+  return cipher.join("");
 }
 
 function analyzeArr(arr) {

@@ -30,7 +30,7 @@ test("calculator", () => {
 });
 
 test("caesarCipher", () => {
-  expect(caesarCi("julius")).toBe("kvmjvt");
+  expect(caesarCi("julius")).toBe("mxolxv");
 });
 
 test("analyzeArray", () => {
