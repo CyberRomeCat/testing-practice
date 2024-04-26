@@ -12,4 +12,18 @@ function cal(para) {
   return para;
 }
 
-export { capitalize, reverseStr, cal };
+function caesarCi() {
+  let alphabets = "abcdefghijklmnopqrstuvwxyz";
+}
+
+function analyzeArr() {
+  let obj = {
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  };
+  return obj;
+}
+
+export { capitalize, reverseStr, cal, caesarCi, analyzeArr };
