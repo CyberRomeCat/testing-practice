@@ -30,7 +30,7 @@ test("calculator", () => {
 });
 
 test("analyzeArray", () => {
-  expect(analyzeArr()).toStrictEqual({
+  expect(analyzeArr([1, 8, 3, 4, 2, 6])).toStrictEqual({
     average: 4,
     min: 1,
     max: 8,
