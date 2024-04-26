@@ -1,11 +1,11 @@
-const script = require("./script");
+import { capitalize, reverseStr, cal } from "./script";
 
 test("Capitalize first letter", () => {
-  expect(script("love")).toBe("Evol");
+  expect(capitalize("love")).toBe("Love");
 });
 
 test("reverseString", () => {
-  expect(script("love")).toBe("Evol");
+  expect(reverseStr("love")).toBe("evol");
 });
 
 test("calculator", () => {
@@ -23,8 +23,8 @@ test("calculator", () => {
       return 2 / 2;
     },
   };
-  expect(script(calc.add())).toBe(4);
-  expect(script(calc.subtract())).toBe(4);
-  expect(script(calc.multiply())).toBe(6);
-  expect(script(calc.divide())).toBe(1);
+  expect(cal(calc.add())).toBe(4);
+  expect(cal(calc.subtract())).toBe(4);
+  expect(cal(calc.multiply())).toBe(6);
+  expect(cal(calc.divide())).toBe(1);
 });

@@ -1,11 +1,15 @@
-function testSubject(test) {
-  if (typeof test == "string") {
-    let reversed = test.split("").reverse().join("");
-    let capitalize = reversed[0].toUpperCase() + reversed.slice(1);
-    return capitalize;
-  } else if (typeof test == "number") {
-    return test;
-  }
+function capitalize(test) {
+  let capitalize = test[0].toUpperCase() + test.slice(1);
+  return capitalize;
 }
 
-module.exports = testSubject;
+function reverseStr(test) {
+  let reversed = test.split("").reverse().join("");
+  return reversed;
+}
+
+function cal(para) {
+  return para;
+}
+
+export { capitalize, reverseStr, cal };
